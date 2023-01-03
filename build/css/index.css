@@ -589,6 +589,86 @@ video {
   left: 50px;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
+.left-96 {
+  left: 24rem;
+}
+
+.left-\[5000px\] {
+  left: 5000px;
+}
+
+.left-\[500px\] {
+  left: 500px;
+}
+
+.left-\[700px\] {
+  left: 700px;
+}
+
+.left-\[900px\] {
+  left: 900px;
+}
+
+.left-\[850px\] {
+  left: 850px;
+}
+
+.left-\[860px\] {
+  left: 860px;
+}
+
+.left-\[870px\] {
+  left: 870px;
+}
+
+.left-\[880px\] {
+  left: 880px;
+}
+
+.-top-7 {
+  top: -1.75rem;
+}
+
+.top-7 {
+  top: 1.75rem;
+}
+
+.top-\[600px\] {
+  top: 600px;
+}
+
+.top-\[400px\] {
+  top: 400px;
+}
+
+.top-\[500px\] {
+  top: 500px;
+}
+
+.top-\[550px\] {
+  top: 550px;
+}
+
+.top-\[560px\] {
+  top: 560px;
+}
+
+.top-\[585px\] {
+  top: 585px;
+}
+
+.top-\[580px\] {
+  top: 580px;
+}
+
+.top-\[570px\] {
+  top: 570px;
+}
+
 .mt-28 {
   margin-top: 7rem;
 }
