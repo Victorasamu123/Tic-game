@@ -16,7 +16,7 @@
     </h1>
     <div align="center">
       <div class="lg:inline md:inline block">
-        <input type="text" class="lg:border-[#974F10] md:border-[#974F10] border-[#974F10] lg:border-[2px] md:border-[2px] border-[2px] lg:rounded-xl md:rounded-xl rounded-xl lg:text-2xl md:text-2xl text-xl lg:pl-3 md:pl-3 pl-2 text-[#5a2f09] lg:mr-6 md:mr-6 md-0 lg:mb-0 md:mb-0 mb-3" placeholder="PlayerOne Name"/>
+        <input type="text" maxlength="8" class="lg:border-[#974F10] md:border-[#974F10] border-[#974F10] lg:border-[2px] md:border-[2px] border-[2px] lg:rounded-xl md:rounded-xl rounded-xl lg:text-2xl md:text-2xl text-xl lg:pl-3 md:pl-3 pl-2 text-[#5a2f09] lg:mr-6 md:mr-6 md-0 lg:mb-0 md:mb-0 mb-3" placeholder="PlayerOne Name"/>
       </div>
       <div class="lg:inline md:inline block">
         <input type="text" class="lg:border-[#974F10] md:border-[#974F10] border-[#974F10] lg:border-[2px] md:border-[2px] border-[2px] lg:rounded-xl md:rounded-xl rounded-xl lg:text-2xl md:text-2xl text-xl lg:pl-3 md:pl-3 pl-2 text-[#5a2f09] lg:mr-6 md:mr-6 md-0 lg:mb-0 md:mb-0 mb-3" placeholder="PlayerTwo Name"/>
@@ -31,7 +31,7 @@
     <div align="center" class="text-[#5a2f09] lg:text-3xl lg:font-bold text-xl font-semibold">
       Click the Game to start now
     </div>
-    <table align="center"class="border-separate border border-[#974F10] lg:h-[400px] lg:w-96 md:h-[400px] md:w-96 h-60 w-60 lg:mt-10 md:mt-10 mt-10">
+    <table align="center"class="border-separate border border-[#974F10] lg:h-[400px] lg:w-96 md:h-[400px] md:w-96 h-60 w-60 lg:mt md:mt-10 mt-10">
       <tr>
         <td class="border border-[#974F10] text-5xl lg:text-9xl lg:pl-4 pl-5 text-[#5a2f09]">X</td>
         <td class="border border-[#974F10] text-5xl lg:text-9xl lg:pl-4 pl-5 text-black">X</td>
@@ -48,10 +48,19 @@
         <td class="border border-[#974F10] text-5xl lg:text-9xl lg:pl-4 pl-5 text-[#5a2f09]">X</td>
       </tr>
     </table>
-    <div class="absolute left-[880px] top-[570px]">
-        <button class="lg:w-36 md:w-36 w-28 h-10 bg-[#974F10] rounded-xl">Play</button>
-        <button class="lg:w-36 md:w-36 w-28 h-10 bg-[#974F10] rounded-xl">Continue</button>
-        <button class="lg:w-36 md:w-36 w-28 h-10 bg-[#974F10] rounded-xl">Restart</button>
+    <div class="lg:absolute lg:left-[880px] lg:top-[570px] md:absolute md:left-[190px] md:top-[610px] lg:mt-0 md:mt-0 mt-3">
+        <button class="lg:w-36 md:w-36 w-20 h-10 bg-[#974F10] rounded-xl">Play</button>
+        <button class="lg:w-36 md:w-36 w-20 h-10 bg-[#974F10] rounded-xl">Continue</button>
+        <button class="lg:w-36 md:w-36 w-20 h-10 bg-[#974F10] rounded-xl">Restart</button>
+    </div>
+    <div class="lg:absolute lg:top-[200px] left-[895px] md:mt-11 grid place-content-center ">
+         <div class="text-[#5a2f09] lg:text-4xl lg:font-bold text-xl font-semibold">Score Board:</div>
+         <div class="flex justify-between">
+            <span class="text-[#5a2f09] lg:text-2xl lg:font-bold text-xl font-semibold">Victorss</span><span class="text-[#5a2f09] lg:text-2xl lg:font-bold text-xl font-semibold">0</span>
+        </div>
+        <div class="flex justify-between">
+            <span class="text-[#5a2f09] lg:text-2xl lg:font-bold text-xl font-semibold">Victorss</span><span class="text-[#5a2f09] lg:text-2xl lg:font-bold text-xl font-semibold">0</span>
+        </div>
     </div>
   </body>
 </html>
