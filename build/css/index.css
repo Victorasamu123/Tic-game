@@ -920,6 +920,10 @@ video {
   padding-left: 0px;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
