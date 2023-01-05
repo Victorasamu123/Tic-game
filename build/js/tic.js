@@ -61,7 +61,6 @@ const logGame = (e) => {
             ++scoreOne.innerHTML;
         }
         else if ((a == "O" && b == "O" && c == "O") || (d == "O" && ee == "O" && f == "O") || (g == "O" && h == "O" && i == "O") || (a == "O" && d == "O" && g == "O") || (b == "O" && ee == "O" && h == "O") || (c == "O" && f == "O" && i == "O") || (a == "O" && ee == "O" && i == "O") || (c == "O" && ee == "O" && g == "O")) {
-            console.log("ose");
             intialValue = "X";
             winOne.innerText = `${playerTwoName} is the winner`;
             winTwo.innerHTML = "there is a winner pls press the continue button";
@@ -76,4 +75,32 @@ const logGame = (e) => {
         winOne.innerText = "CLick on start button for game to start";
         winTwo.innerHTML = "!!!!!!!!!!!!!!!!";
     }
+};
+const continueGame = () => {
+    let playerOneName = document.getElementById('PlayerOne').value;
+    let playerTwoName = document.getElementById('PlayerTwo').value;
+    if (playerOneName != "" && playerTwoName != "") {
+        firstTd.innerHTML = "";
+        secondTd.innerHTML = "";
+        thirdTd.innerHTML = "";
+        fourthTd.innerHTML = "";
+        fifthTd.innerHTML = "";
+        sixTd.innerHTML = "";
+        sevenTd.innerHTML = "";
+        eightTd.innerHTML = "";
+        ninethTd.innerHTML = "";
+        winOne.innerText = "next player turn";
+        winTwo.innerHTML = "This is another game goodluck";
+    }
+    else {
+        winOne.innerHTML = "please input a correct name ";
+        winTwo.innerText = "input name to play";
+    }
+};
+const restartGame = () => {
+    location.reload();
+};
+let song = document.getElementById('playMe');
+const songMe = () => {
+    song.play();
 };

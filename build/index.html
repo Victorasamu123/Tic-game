@@ -49,10 +49,11 @@
       </tr>
     </table>
     <div class="lg:absolute lg:left-[880px] lg:top-[570px] md:absolute md:left-[190px] md:top-[610px] lg:mt-0 md:mt-0 mt-3">
-        <button class="lg:w-36 md:w-36 w-20 h-10 bg-[#974F10] rounded-xl">Play</button>
-        <button class="lg:w-36 md:w-36 w-20 h-10 bg-[#974F10] rounded-xl">Continue</button>
-        <button class="lg:w-36 md:w-36 w-20 h-10 bg-[#974F10] rounded-xl">Restart</button>
+        <button class="lg:w-36 md:w-36 w-20 h-10 bg-[#974F10] rounded-xl" onclick="songMe()">Play</button>
+        <button class="lg:w-36 md:w-36 w-20 h-10 bg-[#974F10] rounded-xl" onclick="continueGame()">Continue</button>
+        <button class="lg:w-36 md:w-36 w-20 h-10 bg-[#974F10] rounded-xl" onclick="restartGame()">Restart</button>
     </div>
+    <audio src="Ruger-Girlfriend-(TrendyBeatz.com).mp3" loop id="playMe"></audio>
     <div class="lg:absolute lg:top-[200px] left-[895px] md:mt-11 grid place-content-center ">
          <div class="text-[#5a2f09] lg:text-4xl lg:font-bold text-xl font-semibold">Score Board:</div>
          <div class="flex justify-between">
