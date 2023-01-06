@@ -54,18 +54,21 @@ const logGame = (e) => {
         let g = sevenTd.innerHTML;
         let h = eightTd.innerHTML;
         let i = ninethTd.innerHTML;
+        // Condition if X wins
         if ((a == "X" && b == "X" && c == "X") || (d == "X" && ee == "X" && f == "X") || (g == "X" && h == "X" && i == "X") || (a == "X" && d == "X" && g == "X") || (b == "X" && ee == "X" && h == "X") || (c == "X" && f == "X" && i == "X") || (a == "X" && ee == "X" && i == "X") || (c == "X" && ee == "X" && g == "X")) {
             intialValue = "O";
             winOne.innerText = `${playerOneName} is the winner`;
             winTwo.innerHTML = "there is a winner pls press the continue button";
             ++scoreOne.innerHTML;
         }
+        // condition  if O wins
         else if ((a == "O" && b == "O" && c == "O") || (d == "O" && ee == "O" && f == "O") || (g == "O" && h == "O" && i == "O") || (a == "O" && d == "O" && g == "O") || (b == "O" && ee == "O" && h == "O") || (c == "O" && f == "O" && i == "O") || (a == "O" && ee == "O" && i == "O") || (c == "O" && ee == "O" && g == "O")) {
             intialValue = "X";
             winOne.innerText = `${playerTwoName} is the winner`;
             winTwo.innerHTML = "there is a winner pls press the continue button";
             ++scoreTwo.innerHTML;
         }
+        // condition for if ther is a draw
         else if (a != "" && b != "" && c != "" && d != "" && ee != "" && f != "" && g != "" && h != "" && i != "") {
             winOne.innerHTML = "oops";
             winTwo.innerText = `it a draw`;
@@ -76,6 +79,7 @@ const logGame = (e) => {
         winTwo.innerHTML = "!!!!!!!!!!!!!!!!";
     }
 };
+// function for contiuing game
 const continueGame = () => {
     let playerOneName = document.getElementById('PlayerOne').value;
     let playerTwoName = document.getElementById('PlayerTwo').value;
@@ -97,13 +101,16 @@ const continueGame = () => {
         winTwo.innerText = "input name to play";
     }
 };
+// function for restarting game
 const restartGame = () => {
     location.reload();
 };
 let song = document.getElementById('playMe');
+// function for playing song
 const playSong = () => {
     song.play();
 };
+// condition for pausing song
 const songMe = () => {
     song.pause();
 };
