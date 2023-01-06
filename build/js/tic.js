@@ -53,7 +53,7 @@ const logGame = (e) => {
         let f = sixTd.innerHTML;
         let g = sevenTd.innerHTML;
         let h = eightTd.innerHTML;
-        let i = eightTd.innerHTML;
+        let i = ninethTd.innerHTML;
         if ((a == "X" && b == "X" && c == "X") || (d == "X" && ee == "X" && f == "X") || (g == "X" && h == "X" && i == "X") || (a == "X" && d == "X" && g == "X") || (b == "X" && ee == "X" && h == "X") || (c == "X" && f == "X" && i == "X") || (a == "X" && ee == "X" && i == "X") || (c == "X" && ee == "X" && g == "X")) {
             intialValue = "O";
             winOne.innerText = `${playerOneName} is the winner`;
@@ -101,6 +101,9 @@ const restartGame = () => {
     location.reload();
 };
 let song = document.getElementById('playMe');
-const songMe = () => {
+const playSong = () => {
     song.play();
+};
+const songMe = () => {
+    song.pause();
 };
